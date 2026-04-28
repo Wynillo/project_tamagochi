@@ -11,12 +11,12 @@ interface EggChoice {
 }
 
 const EGG_CHOICES: EggChoice[] = [
-  { id: 'fire', speciesId: 'EMBERSPARK', color: 0xff6b4a, accentColor: 0xffaa33, name: 'Emberspark' },
-  { id: 'water', speciesId: 'TIDEWISP', color: 0x4a9eff, accentColor: 0x33d4ff, name: 'Tidewisp' },
-  { id: 'earth', speciesId: 'STONESHELL', color: 0x7cb342, accentColor: 0xaed581, name: 'Stoneshell' },
-  { id: 'air', speciesId: 'ZEPHYRWING', color: 0xb0bec5, accentColor: 0xe0f7fa, name: 'Zephyrwing' },
+  { id: 'fire', speciesId: 'SPARKLESPHERE', color: 0xff6b4a, accentColor: 0xffaa33, name: 'Emberspark' },
+  { id: 'water', speciesId: 'SPARKLESPHERE', color: 0x4a9eff, accentColor: 0x33d4ff, name: 'Tidewisp' },
+  { id: 'earth', speciesId: 'SPARKLESPHERE', color: 0x7cb342, accentColor: 0xaed581, name: 'Stoneshell' },
+  { id: 'air', speciesId: 'SPARKLESPHERE', color: 0xb0bec5, accentColor: 0xe0f7fa, name: 'Zephyrwing' },
   { id: 'light', speciesId: 'SPARKLESPHERE', color: 0xfff176, accentColor: 0xffffff, name: 'Sparklesphere' },
-  { id: 'dark', speciesId: 'SHADOWMIRE', color: 0x7c4dff, accentColor: 0xb388ff, name: 'Shadowmire' },
+  { id: 'dark', speciesId: 'SPARKLESPHERE', color: 0x7c4dff, accentColor: 0xb388ff, name: 'Shadowmire' },
 ];
 
 export class NewGameScene extends Phaser.Scene {
@@ -155,11 +155,7 @@ export class NewGameScene extends Phaser.Scene {
     if (!name) return;
 
     const store = useGameStore.getState();
-    store.setSpecies(this.selectedEgg.speciesId);
-    store.setCreatureName(name);
-    store.setStage('egg');
-    store.updateNeeds({ hunger: 80, energy: 90, mood: 70, discipline: 50 });
-
+    store.startGame(this.selectedEgg.speciesId, name);
     const state = useGameStore.getState();
     SaveManager.save('autosave', {
       version: '1.0.0',

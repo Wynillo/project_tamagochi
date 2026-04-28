@@ -11,6 +11,7 @@ import { CreatureScene } from './scenes/CreatureScene';
 import { ShopScene } from './scenes/ShopScene';
 import { EventScene } from './scenes/EventScene';
 import { PhaseTransitionScene } from './scenes/PhaseTransitionScene';
+import { SceneTrackerPlugin } from './SceneTrackerPlugin';
 
 export function createGame(): Phaser.Game {
   return new Phaser.Game({
@@ -40,6 +41,11 @@ export function createGame(): Phaser.Game {
       EventScene,
       PhaseTransitionScene,
     ],
+    plugins: {
+      global: [
+        { key: 'SceneTrackerPlugin', plugin: SceneTrackerPlugin, start: true },
+      ],
+    },
     disableContextMenu: true,
   });
 }

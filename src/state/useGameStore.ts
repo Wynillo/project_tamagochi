@@ -7,6 +7,7 @@ import type { TimeState } from '../data/types/TimeTypes';
 import type { InventoryState, InventoryItem, EquipmentSlots } from '../data/types/ItemTypes';
 import type { RegionId, SceneId, LifeStage, TimePhase, PersonalityId } from '../data/types/CommonTypes';
 import { SaveManager } from '../persistence/SaveManager';
+import { NEED_DECAY_RATES } from '../data/constants/GameConstants';
 
 type PersonalityIdType = PersonalityId;
 
@@ -117,6 +118,7 @@ interface SessionActions {
 
 interface GameActions {
   resetStore: () => void;
+  startGame: (speciesId: string, name: string) => void;
 }
 
 type GameStoreState = GameState &
@@ -209,6 +211,35 @@ export const useGameStore = create<GameStoreState>()(
       resetStore: () => {
         set(getInitialState());
       },
+
+      startGame: (speciesId: string, name: string) =>
+        set(() => {
+          const initial = getInitialState();
+          return {
+            ...initial,
+            creature: {
+              ...initial.creature,
+              id: `creature_${Date.now()}`,
+              name,
+              speciesId,
+              stage: 'baby',
+              needs: { hunger: 70, energy: 80, mood: 60, discipline: 50 },
+              stats: { str: 10, spd: 10, int: 10, sta: 10 },
+            },
+            inventory: {
+              ...initial.inventory,
+              items: [
+                { itemId: 'NutriPellet', quantity: 5, acquiredAt: Date.now() },
+                { itemId: 'SweetBerry', quantity: 3, acquiredAt: Date.now() },
+                { itemId: 'EnergyBar', quantity: 2, acquiredAt: Date.now() },
+              ],
+            },
+            time: {
+              ...initial.time,
+              lastRealTimestamp: Date.now(),
+            },
+          };
+        }),
 
       setCreatureName: (name: string) =>
         set((state) => ({
@@ -404,14 +435,40 @@ export const useGameStore = create<GameStoreState>()(
         })),
 
       tick: (deltaMinutes: number) =>
-        set((state) => ({
-          ...state,
-          time: {
-            ...state.time,
-            gameTime: new Date(state.time.gameTime.getTime() + deltaMinutes * 60000),
-            totalPlayTime: state.time.totalPlayTime + deltaMinutes,
-          },
-        })),
+        set((state) => {
+          const newTime = new Date(state.time.gameTime.getTime() + deltaMinutes * 60000);
+          const hr = newTime.getHours();
+          let newPhase: TimePhase = state.time.phase;
+          if (hr >= 5 && hr < 7) newPhase = 'dawn';
+          else if (hr >= 7 && hr < 12) newPhase = 'day';
+          else if (hr >= 12 && hr < 17) newPhase = 'afternoon';
+          else if (hr >= 17 && hr < 20) newPhase = 'dusk';
+          else if (hr >= 20 && hr < 23) newPhase = 'night';
+          else newPhase = 'deepNight';
+
+          const isNight = hr < 6 || hr >= 22;
+          const rates = NEED_DECAY_RATES[state.creature.stage] ?? NEED_DECAY_RATES.adult;
+          const newNeeds = {
+            hunger: Math.max(0, state.creature.needs.hunger - rates.hunger * (deltaMinutes / 60) * 0.1),
+            energy: Math.max(0, state.creature.needs.energy - (isNight ? rates.energy * 2 : rates.energy) * (deltaMinutes / 60) * 0.1),
+            mood: Math.max(0, state.creature.needs.mood - rates.mood * (deltaMinutes / 60) * 0.1),
+            discipline: Math.max(0, state.creature.needs.discipline - rates.discipline * (deltaMinutes / 60) * 0.1),
+          };
+
+          return {
+            ...state,
+            time: {
+              ...state.time,
+              gameTime: newTime,
+              phase: newPhase,
+              totalPlayTime: state.time.totalPlayTime + deltaMinutes,
+            },
+            creature: {
+              ...state.creature,
+              needs: newNeeds,
+            },
+          };
+        }),
 
       setGameTime: (time: Date) =>
         set((state) => ({

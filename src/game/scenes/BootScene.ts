@@ -38,34 +38,24 @@ export class BootScene extends Phaser.Scene {
   private createCreaturePlaceholder(): void {
     const size = 80;
     const gfx = this.add.graphics();
-
-    // Outer glow ring
     gfx.fillStyle(0x6c63ff, 0.3);
     gfx.fillCircle(size / 2, size / 2, 36);
-
-    // Inner body
     gfx.fillStyle(0x8b83ff, 0.8);
     gfx.fillCircle(size / 2, size / 2, 24);
-
-    // Core highlight
     gfx.fillStyle(0xc4bfff, 1);
     gfx.fillCircle(size / 2, size / 2 - 4, 10);
-
-    // Eyes
     gfx.fillStyle(0x1a1a2e, 1);
     gfx.fillCircle(size / 2 - 8, size / 2 - 2, 3);
     gfx.fillCircle(size / 2 + 8, size / 2 - 2, 3);
-
-    // Eye highlights
     gfx.fillStyle(0xffffff, 1);
     gfx.fillCircle(size / 2 - 7, size / 2 - 3, 1.2);
     gfx.fillCircle(size / 2 + 9, size / 2 - 3, 1.2);
-
     gfx.generateTexture('creature-placeholder', size, size);
     gfx.destroy();
   }
 
   create(): void {
+    useGameStore.getState().setCurrentScene('boot');
     const { width, height } = this.cameras.main;
 
     const loadingText = this.add.text(width / 2, height / 2, 'Loading Digital Companion...', {

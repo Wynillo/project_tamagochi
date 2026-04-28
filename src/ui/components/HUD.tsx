@@ -85,10 +85,10 @@ export const HUD: React.FC = () => {
         }}
       >
         {[
-          { emoji: '🎒', label: 'Inventory', scene: 'inventory' },
-          { emoji: '💪', label: 'Train', scene: 'training' },
-          { emoji: '🗺️', label: 'Map', scene: 'map' },
-          { emoji: '⚙️', label: 'Menu', scene: 'mainMenu' },
+          { label: 'Inv', scene: 'inventory' },
+          { label: 'Train', scene: 'training' },
+          { label: 'Map', scene: 'map' },
+          { label: 'Menu', scene: 'mainMenu' },
         ].map((btn) => (
           <button
             key={btn.label}
@@ -105,13 +105,13 @@ export const HUD: React.FC = () => {
               border: '1px solid rgba(255,255,255,0.12)',
               borderRadius: 10,
               color: '#fff',
-              fontSize: 22,
+              fontSize: 13,
+              fontWeight: 600,
               cursor: 'pointer',
               touchAction: 'manipulation',
             }}
           >
-            <span>{btn.emoji}</span>
-            <span style={{ fontSize: 9, color: '#ccc' }}>{btn.label}</span>
+            {btn.label}
           </button>
         ))}
       </div>
