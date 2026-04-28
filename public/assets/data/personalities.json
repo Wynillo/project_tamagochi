@@ -1,0 +1,104 @@
+[
+  {
+    "id": "playful",
+    "name": "Playful",
+    "description": "A cheerful creature that loves games and social interaction.",
+    "statModifiers": {
+      "spd": 3,
+      "int": -1,
+      "sta": 0,
+      "str": 0
+    },
+    "behaviorFlags": [
+      "seeksAttention",
+      "learnsFromPlay",
+      "distractable",
+      "moodRecoversFast"
+    ]
+  },
+  {
+    "id": "gentle",
+    "name": "Gentle",
+    "description": "A kind-hearted creature that responds well to care and patience.",
+    "statModifiers": {
+      "int": 2,
+      "sta": 2,
+      "str": -1,
+      "spd": -1
+    },
+    "behaviorFlags": [
+      "calmDemeanor",
+      "bondStrength",
+      "stressResistant",
+      "healBonus"
+    ]
+  },
+  {
+    "id": "curious",
+    "name": "Curious",
+    "description": "An inquisitive creature that explores and learns quickly.",
+    "statModifiers": {
+      "int": 4,
+      "spd": 1,
+      "str": -2,
+      "sta": 0
+    },
+    "behaviorFlags": [
+      "exploresAreas",
+      "findsItems",
+      "learnsAttacksFast",
+      "easilyDistracted"
+    ]
+  },
+  {
+    "id": "proud",
+    "name": "Proud",
+    "description": "A dignified creature that values strength and achievement.",
+    "statModifiers": {
+      "str": 3,
+      "sta": 2,
+      "int": -1,
+      "spd": 0
+    },
+    "behaviorFlags": [
+      "competitive",
+      "evolutionFocused",
+      "disobedienceRisk",
+      "achievementBoost"
+    ]
+  },
+  {
+    "id": "cunning",
+    "name": "Cunning",
+    "description": "A clever creature that uses strategy and trickery.",
+    "statModifiers": {
+      "int": 3,
+      "spd": 2,
+      "str": -2,
+      "sta": 0
+    },
+    "behaviorFlags": [
+      "tacticalThinking",
+      "escapeArtist",
+      "criticalHits",
+      "manipulative"
+    ]
+  },
+  {
+    "id": "brave",
+    "name": "Brave",
+    "description": "A fearless creature that never backs down from a challenge.",
+    "statModifiers": {
+      "str": 2,
+      "sta": 3,
+      "int": 0,
+      "spd": -1
+    },
+    "behaviorFlags": [
+      "fearless",
+      "lastStand",
+      "challengeSeeker",
+      "loyalProtector"
+    ]
+  }
+]

@@ -1,0 +1,160 @@
+{
+  "nursery": {
+    "dawn": [
+      { "creatureId": "sparklesphere", "weight": 1.0, "minStage": 1, "maxStage": 1 }
+    ],
+    "day": [
+      { "creatureId": "sparklesphere", "weight": 1.0, "minStage": 1, "maxStage": 1 }
+    ],
+    "afternoon": [
+      { "creatureId": "sparklesphere", "weight": 1.0, "minStage": 1, "maxStage": 1 }
+    ],
+    "dusk": [
+      { "creatureId": "sparklesphere", "weight": 1.0, "minStage": 1, "maxStage": 1 }
+    ],
+    "night": [
+      { "creatureId": "sparklesphere", "weight": 1.0, "minStage": 1, "maxStage": 1 }
+    ],
+    "deepNight": [
+      { "creatureId": "sparklesphere", "weight": 1.0, "minStage": 1, "maxStage": 1 }
+    ]
+  },
+  "verdantThicket": {
+    "dawn": [
+      { "creatureId": "wild_bunny", "weight": 0.5, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_dewbug", "weight": 0.5, "minStage": 1, "maxStage": 2 }
+    ],
+    "day": [
+      { "creatureId": "wild_bunny", "weight": 0.4, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_pleaf", "weight": 0.4, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_caterpillar", "weight": 0.2, "minStage": 1, "maxStage": 2 }
+    ],
+    "afternoon": [
+      { "creatureId": "wild_caterpillar", "weight": 0.5, "minStage": 1, "maxStage": 2 },
+      { "creatureId": "wild_pleaf", "weight": 0.5, "minStage": 2, "maxStage": 3 }
+    ],
+    "dusk": [
+      { "creatureId": "wild_glowfly", "weight": 0.6, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_bunny", "weight": 0.4, "minStage": 2, "maxStage": 3 }
+    ],
+    "night": [
+      { "creatureId": "wild_glowfly", "weight": 0.7, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_nightmoth", "weight": 0.3, "minStage": 2, "maxStage": 3 }
+    ],
+    "deepNight": [
+      { "creatureId": "wild_nightmoth", "weight": 0.8, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_shadowling", "weight": 0.2, "minStage": 2, "maxStage": 3 }
+    ]
+  },
+  "searingDunes": {
+    "dawn": [
+      { "creatureId": "wild_coolclaw", "weight": 0.5, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_flamefox", "weight": 0.5, "minStage": 3, "maxStage": 4 }
+    ],
+    "day": [
+      { "creatureId": "wild_flamefox", "weight": 0.5, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_sandworm", "weight": 0.3, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_heatwisp", "weight": 0.2, "minStage": 2, "maxStage": 3 }
+    ],
+    "afternoon": [
+      { "creatureId": "wild_heatwisp", "weight": 0.6, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_sandworm", "weight": 0.4, "minStage": 3, "maxStage": 4 }
+    ],
+    "dusk": [
+      { "creatureId": "wild_dunerunner", "weight": 0.5, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_flamefox", "weight": 0.5, "minStage": 3, "maxStage": 4 }
+    ],
+    "night": [
+      { "creatureId": "wild_sandworm", "weight": 0.6, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_coolclaw", "weight": 0.4, "minStage": 2, "maxStage": 3 }
+    ],
+    "deepNight": [
+      { "creatureId": "wild_starscorpion", "weight": 0.7, "minStage": 4, "maxStage": 5 },
+      { "creatureId": "wild_coolclaw", "weight": 0.3, "minStage": 2, "maxStage": 3 }
+    ]
+  },
+  "ruinsOfAethelgard": {
+    "dawn": [
+      { "creatureId": "wild_runebat", "weight": 0.4, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_gearmin", "weight": 0.6, "minStage": 2, "maxStage": 3 }
+    ],
+    "day": [
+      { "creatureId": "wild_gearmin", "weight": 0.5, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_stonegolem", "weight": 0.3, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_runebat", "weight": 0.2, "minStage": 2, "maxStage": 3 }
+    ],
+    "afternoon": [
+      { "creatureId": "wild_stonegolem", "weight": 0.5, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_gearmin", "weight": 0.5, "minStage": 2, "maxStage": 3 }
+    ],
+    "dusk": [
+      { "creatureId": "wild_runebat", "weight": 0.6, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_shadowling", "weight": 0.4, "minStage": 2, "maxStage": 3 }
+    ],
+    "night": [
+      { "creatureId": "wild_shadowling", "weight": 0.5, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_gearmin", "weight": 0.3, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_ghostlamp", "weight": 0.2, "minStage": 3, "maxStage": 4 }
+    ],
+    "deepNight": [
+      { "creatureId": "wild_ghostlamp", "weight": 0.6, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_runebat", "weight": 0.4, "minStage": 2, "maxStage": 3 }
+    ]
+  },
+  "codeSpire": {
+    "dawn": [
+      { "creatureId": "wild_datawisp", "weight": 0.5, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_bitbeast", "weight": 0.5, "minStage": 3, "maxStage": 4 }
+    ],
+    "day": [
+      { "creatureId": "wild_cipherwolf", "weight": 0.4, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_bitbeast", "weight": 0.4, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_datawisp", "weight": 0.2, "minStage": 2, "maxStage": 3 }
+    ],
+    "afternoon": [
+      { "creatureId": "wild_bitbeast", "weight": 0.5, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_cipherwolf", "weight": 0.5, "minStage": 3, "maxStage": 4 }
+    ],
+    "dusk": [
+      { "creatureId": "wild_glitchling", "weight": 0.6, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_datawisp", "weight": 0.4, "minStage": 2, "maxStage": 3 }
+    ],
+    "night": [
+      { "creatureId": "wild_glitchling", "weight": 0.5, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_cipherwolf", "weight": 0.3, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_viruspawn", "weight": 0.2, "minStage": 4, "maxStage": 5 }
+    ],
+    "deepNight": [
+      { "creatureId": "wild_viruspawn", "weight": 0.7, "minStage": 4, "maxStage": 5 },
+      { "creatureId": "wild_glitchling", "weight": 0.3, "minStage": 3, "maxStage": 4 }
+    ]
+  },
+  "shimmeringDeeps": {
+    "dawn": [
+      { "creatureId": "wild_crystaljelly", "weight": 0.5, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_abyssal", "weight": 0.5, "minStage": 3, "maxStage": 4 }
+    ],
+    "day": [
+      { "creatureId": "wild_voidray", "weight": 0.4, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_crystaljelly", "weight": 0.4, "minStage": 2, "maxStage": 3 },
+      { "creatureId": "wild_abyssal", "weight": 0.2, "minStage": 3, "maxStage": 4 }
+    ],
+    "afternoon": [
+      { "creatureId": "wild_abyssal", "weight": 0.5, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_voidray", "weight": 0.5, "minStage": 3, "maxStage": 4 }
+    ],
+    "dusk": [
+      { "creatureId": "wild_phantomfish", "weight": 0.6, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_crystaljelly", "weight": 0.4, "minStage": 2, "maxStage": 3 }
+    ],
+    "night": [
+      { "creatureId": "wild_phantomfish", "weight": 0.5, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_voidray", "weight": 0.3, "minStage": 3, "maxStage": 4 },
+      { "creatureId": "wild_darkfin", "weight": 0.2, "minStage": 4, "maxStage": 5 }
+    ],
+    "deepNight": [
+      { "creatureId": "wild_darkfin", "weight": 0.6, "minStage": 4, "maxStage": 5 },
+      { "creatureId": "wild_leviathan_spawn", "weight": 0.4, "minStage": 5, "maxStage": 5 }
+    ]
+  }
+}

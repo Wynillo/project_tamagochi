@@ -1,0 +1,205 @@
+[
+  {
+    "id": "nutriPellet",
+    "name": "NutriPellet",
+    "type": "food",
+    "description": "Basic nutritious pellets. Fills hunger moderately.",
+    "effect": {
+      "type": "statBoost",
+      "key": "hunger",
+      "value": 10
+    },
+    "value": 5,
+    "rarity": "common"
+  },
+  {
+    "id": "sweetBerry",
+    "name": "Sweet Berry",
+    "type": "food",
+    "description": "A juicy berry that boosts hunger and mood.",
+    "effect": {
+      "type": "multiStat",
+      "effects": [
+        { "key": "hunger", "value": 8 },
+        { "key": "mood", "value": 3 }
+      ]
+    },
+    "value": 8,
+    "rarity": "common"
+  },
+  {
+    "id": "meatyChunk",
+    "name": "Meaty Chunk",
+    "type": "food",
+    "description": "A filling piece of meat. May upset sensitive creatures.",
+    "effect": {
+      "type": "multiStat",
+      "effects": [
+        { "key": "hunger", "value": 12 },
+        { "key": "mood", "value": -2 }
+      ]
+    },
+    "value": 10,
+    "rarity": "common"
+  },
+  {
+    "id": "energyBar",
+    "name": "Energy Bar",
+    "type": "food",
+    "description": "A compact snack that restores hunger and energy.",
+    "effect": {
+      "type": "multiStat",
+      "effects": [
+        { "key": "hunger", "value": 5 },
+        { "key": "energy", "value": 5 }
+      ]
+    },
+    "value": 12,
+    "rarity": "uncommon"
+  },
+  {
+    "id": "soothingLeaf",
+    "name": "Soothing Leaf",
+    "type": "food",
+    "description": "A calming herb that gently restores hunger and significantly boosts mood.",
+    "effect": {
+      "type": "multiStat",
+      "effects": [
+        { "key": "hunger", "value": 4 },
+        { "key": "mood", "value": 6 }
+      ]
+    },
+    "value": 15,
+    "rarity": "uncommon"
+  },
+  {
+    "id": "spicyPepper",
+    "name": "Spicy Pepper",
+    "type": "food",
+    "description": "A fiery pepper that provides a burst of energy.",
+    "effect": {
+      "type": "multiStat",
+      "effects": [
+        { "key": "hunger", "value": 3 },
+        { "key": "energy", "value": 4 }
+      ]
+    },
+    "value": 7,
+    "rarity": "common"
+  },
+  {
+    "id": "gourmetCrystal",
+    "name": "Gourmet Crystal",
+    "type": "food",
+    "description": "A rare crystallized delicacy. Maximizes hunger and mood restoration.",
+    "effect": {
+      "type": "multiStat",
+      "effects": [
+        { "key": "hunger", "value": 15 },
+        { "key": "mood", "value": 8 }
+      ]
+    },
+    "value": 50,
+    "rarity": "rare"
+  },
+  {
+    "id": "medicinalRoot",
+    "name": "Medicinal Root",
+    "type": "food",
+    "description": "A healing herb that cures poison and restores hunger.",
+    "effect": {
+      "type": "statusCure",
+      "cureStatus": "poison",
+      "hungerRestore": 5
+    },
+    "value": 20,
+    "rarity": "uncommon"
+  },
+  {
+    "id": "focusCharm",
+    "name": "Focus Charm",
+    "type": "training",
+    "description": "A charm that enhances stat gains during training.",
+    "effect": {
+      "type": "statMultiplier",
+      "key": "statGain",
+      "value": 1.2
+    },
+    "value": 30,
+    "rarity": "rare"
+  },
+  {
+    "id": "enduranceBand",
+    "name": "Endurance Band",
+    "type": "training",
+    "description": "A wristband that reduces fatigue accumulation during training.",
+    "effect": {
+      "type": "statMultiplier",
+      "key": "fatigue",
+      "value": 0.8
+    },
+    "value": 25,
+    "rarity": "uncommon"
+  },
+  {
+    "id": "wisdomGem",
+    "name": "Wisdom Gem",
+    "type": "training",
+    "description": "A gem that grants bonus intelligence during training sessions.",
+    "effect": {
+      "type": "statBonus",
+      "key": "int",
+      "value": 2
+    },
+    "value": 35,
+    "rarity": "rare"
+  },
+  {
+    "id": "healSpray",
+    "name": "Heal Spray",
+    "type": "battle",
+    "description": "A restorative spray that heals 30 HP during battle.",
+    "effect": {
+      "type": "heal",
+      "value": 30
+    },
+    "value": 20,
+    "rarity": "uncommon"
+  },
+  {
+    "id": "escapeRope",
+    "name": "Escape Rope",
+    "type": "battle",
+    "description": "A rope that guarantees escape from any battle.",
+    "effect": {
+      "type": "escape",
+      "guaranteed": true
+    },
+    "value": 15,
+    "rarity": "common"
+  },
+  {
+    "id": "thicketKey",
+    "name": "Thicket Key",
+    "type": "key",
+    "description": "An ornate key that unlocks passage to the Verdant Thicket.",
+    "effect": {
+      "type": "unlockRegion",
+      "regionId": "verdantThicket"
+    },
+    "value": 0,
+    "rarity": "unique"
+  },
+  {
+    "id": "duneCompass",
+    "name": "Dune Compass",
+    "type": "key",
+    "description": "An ancient compass that guides the way to the Searing Dunes.",
+    "effect": {
+      "type": "unlockRegion",
+      "regionId": "searingDunes"
+    },
+    "value": 0,
+    "rarity": "unique"
+  }
+]

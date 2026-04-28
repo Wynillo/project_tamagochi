@@ -1,0 +1,104 @@
+[
+  {
+    "id": "nurseLuma",
+    "name": "Nurse Luma",
+    "regionId": "nursery",
+    "dialogue": [
+      "Welcome to the Nursery! I'm here to help you care for your little one.",
+      "Remember, a happy creature is a healthy creature. Keep their needs balanced!",
+      "If your creature ever gets sick, bring them to me right away.",
+      "You're doing great! Keep up the good work, trainer!"
+    ],
+    "shopItems": [
+      "nutriPellet",
+      "sweetBerry",
+      "energyBar",
+      "healSpray"
+    ]
+  },
+  {
+    "id": "rangerThorne",
+    "name": "Ranger Thorne",
+    "regionId": "verdantThicket",
+    "dialogue": [
+      "The Thicket is home to many gentle creatures. Tread lightly.",
+      "I've been guarding this forest for thirty years. Never seen anything quite like your companion.",
+      "Those wild bunnies? They come out at dawn. Best time to observe them.",
+      "Take this key - you've proven yourself worthy of exploring deeper."
+    ],
+    "shopItems": [
+      "soothingLeaf",
+      "medicinalRoot",
+      "escapeRope",
+      "thicketKey"
+    ]
+  },
+  {
+    "id": "prophetSahara",
+    "name": "Prophet Sahara",
+    "regionId": "searingDunes",
+    "dialogue": [
+      "The desert tests all who enter. Only the strong survive.",
+      "My people have lived here for generations. We learn to read the sands.",
+      "The heatwisp are spirits of pure fire. Do not provoke them.",
+      "You carry the spirit of the flame. This compass will guide you true."
+    ],
+    "shopItems": [
+      "spicyPepper",
+      "energyBar",
+      "enduranceBand",
+      "duneCompass"
+    ]
+  },
+  {
+    "id": "archivistKael",
+    "name": "Archivist Kael",
+    "regionId": "ruinsOfAethelgard",
+    "dialogue": [
+      "These ruins predate all recorded history. Who built them remains a mystery.",
+      "The gearmin maintain the ancient machinery. They're harmless if left undisturbed.",
+      "I've decoded some of the runes. They speak of creatures born from light itself.",
+      "Knowledge is power. Perhaps these scrolls will aid your journey."
+    ],
+    "shopItems": [
+      "focusCharm",
+      "wisdomGem",
+      "healSpray",
+      "escapeRope"
+    ]
+  },
+  {
+    "id": "cyberMaven",
+    "name": "Cyber Maven",
+    "regionId": "codeSpire",
+    "dialogue": [
+      "The Spire is a fortress of pure data. Reality bends within its walls.",
+      "My consciousness is uploaded. I guard the ancient algorithms.",
+      "The cipherwolf are guardians of encrypted knowledge. Earn their respect.",
+      "Your creature's data signature... fascinating. Take this upgrade."
+    ],
+    "shopItems": [
+      "gourmetCrystal",
+      "focusCharm",
+      "wisdomGem",
+      "healSpray"
+    ]
+  },
+  {
+    "id": "deepWarden",
+    "name": "Deep Warden",
+    "regionId": "shimmeringDeeps",
+    "dialogue": [
+      "Few dare venture into the Deeps. Fewer return.",
+      "The abyssal creatures here have evolved in eternal darkness. They sense intent.",
+      "I am bound to protect this realm. My duty is eternal.",
+      "You seek the legendary ones? Prove your worth, and perhaps they will appear."
+    ],
+    "shopItems": [
+      "gourmetCrystal",
+      "medicinalRoot",
+      "healSpray",
+      "escapeRope"
+    ]
+  }
+]

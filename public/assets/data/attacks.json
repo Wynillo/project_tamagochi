@@ -1,0 +1,107 @@
+[
+  {
+    "id": "emberBite",
+    "name": "Ember Bite",
+    "element": "fire",
+    "power": 30,
+    "accuracy": 95,
+    "riskLevel": "low",
+    "specialEffect": null
+  },
+  {
+    "id": "flameRush",
+    "name": "Flame Rush",
+    "element": "fire",
+    "power": 60,
+    "accuracy": 85,
+    "riskLevel": "med",
+    "specialEffect": null
+  },
+  {
+    "id": "infernoCrash",
+    "name": "Inferno Crash",
+    "element": "fire",
+    "power": 100,
+    "accuracy": 70,
+    "riskLevel": "high",
+    "specialEffect": {
+      "type": "recoil",
+      "value": 0.1
+    }
+  },
+  {
+    "id": "mindSpark",
+    "name": "Mind Spark",
+    "element": "tech",
+    "power": 40,
+    "accuracy": 90,
+    "riskLevel": "low",
+    "specialEffect": null
+  },
+  {
+    "id": "staticClaw",
+    "name": "Static Claw",
+    "element": "tech",
+    "power": 55,
+    "accuracy": 80,
+    "riskLevel": "med",
+    "specialEffect": {
+      "type": "paralyze",
+      "chance": 0.3
+    }
+  },
+  {
+    "id": "healLight",
+    "name": "Heal Light",
+    "element": "light",
+    "power": 0,
+    "accuracy": 100,
+    "riskLevel": "low",
+    "specialEffect": {
+      "type": "heal",
+      "value": 20
+    }
+  },
+  {
+    "id": "tackle",
+    "name": "Tackle",
+    "element": "normal",
+    "power": 25,
+    "accuracy": 100,
+    "riskLevel": "low",
+    "specialEffect": null
+  },
+  {
+    "id": "dodgeStep",
+    "name": "Dodge Step",
+    "element": "normal",
+    "power": 0,
+    "accuracy": 100,
+    "riskLevel": "low",
+    "specialEffect": {
+      "type": "evasionUp",
+      "turns": 2
+    }
+  },
+  {
+    "id": "shadowBite",
+    "name": "Shadow Bite",
+    "element": "dark",
+    "power": 45,
+    "accuracy": 90,
+    "riskLevel": "med",
+    "specialEffect": {
+      "type": "stealHP",
+      "percentage": 0.5
+    }
+  },
+  {
+    "id": "torrentWave",
+    "name": "Torrent Wave",
+    "element": "water",
+    "power": 65,
+    "accuracy": 80,
+    "riskLevel": "med",
+    "specialEffect": null
+  }
+]

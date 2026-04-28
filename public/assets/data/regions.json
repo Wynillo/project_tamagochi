@@ -1,0 +1,230 @@
+[
+  {
+    "id": "nursery",
+    "name": "Nursery",
+    "description": "A safe haven for newly hatched creatures. No dangers here, just gentle guidance.",
+    "travelTime": 0,
+    "dangerLevel": 0,
+    "encounters": [
+      { "creatureId": "sparklesphere", "weight": 1.0, "condition": "starter" }
+    ],
+    "timeOfDayEncounters": {
+      "dawn": [],
+      "day": [],
+      "afternoon": [],
+      "dusk": [],
+      "night": [],
+      "deepNight": []
+    },
+    "tilemapKey": "tilemap_nursery",
+    "musicKey": "music_nursery"
+  },
+  {
+    "id": "verdantThicket",
+    "name": "Verdant Thicket",
+    "description": "A lush forest teeming with plant-based creatures and gentle wildlife.",
+    "travelTime": 15,
+    "dangerLevel": 1,
+    "encounters": [
+      { "creatureId": "wild_bunny", "weight": 0.4 },
+      { "creatureId": "wild_caterpillar", "weight": 0.3 },
+      { "creatureId": "wild_pleaf", "weight": 0.3 }
+    ],
+    "timeOfDayEncounters": {
+      "dawn": [
+        { "creatureId": "wild_dewbug", "weight": 0.5 },
+        { "creatureId": "wild_bunny", "weight": 0.5 }
+      ],
+      "day": [
+        { "creatureId": "wild_bunny", "weight": 0.4 },
+        { "creatureId": "wild_pleaf", "weight": 0.4 },
+        { "creatureId": "wild_caterpillar", "weight": 0.2 }
+      ],
+      "afternoon": [
+        { "creatureId": "wild_caterpillar", "weight": 0.5 },
+        { "creatureId": "wild_pleaf", "weight": 0.5 }
+      ],
+      "dusk": [
+        { "creatureId": "wild_glowfly", "weight": 0.6 },
+        { "creatureId": "wild_bunny", "weight": 0.4 }
+      ],
+      "night": [
+        { "creatureId": "wild_glowfly", "weight": 0.7 },
+        { "creatureId": "wild_nightmoth", "weight": 0.3 }
+      ],
+      "deepNight": [
+        { "creatureId": "wild_nightmoth", "weight": 0.8 },
+        { "creatureId": "wild_shadowling", "weight": 0.2 }
+      ]
+    },
+    "tilemapKey": "tilemap_verdant_thicket",
+    "musicKey": "music_forest"
+  },
+  {
+    "id": "searingDunes",
+    "name": "Searing Dunes",
+    "description": "A scorching desert where only the hardiest fire and earth creatures survive.",
+    "travelTime": 45,
+    "dangerLevel": 3,
+    "encounters": [
+      { "creatureId": "wild_sandworm", "weight": 0.3 },
+      { "creatureId": "wild_flamefox", "weight": 0.4 },
+      { "creatureId": "wild_cactospawn", "weight": 0.3 }
+    ],
+    "timeOfDayEncounters": {
+      "dawn": [
+        { "creatureId": "wild_coolclaw", "weight": 0.5 },
+        { "creatureId": "wild_flamefox", "weight": 0.5 }
+      ],
+      "day": [
+        { "creatureId": "wild_flamefox", "weight": 0.5 },
+        { "creatureId": "wild_sandworm", "weight": 0.3 },
+        { "creatureId": "wild_heatwisp", "weight": 0.2 }
+      ],
+      "afternoon": [
+        { "creatureId": "wild_heatwisp", "weight": 0.6 },
+        { "creatureId": "wild_sandworm", "weight": 0.4 }
+      ],
+      "dusk": [
+        { "creatureId": "wild_dunerunner", "weight": 0.5 },
+        { "creatureId": "wild_flamefox", "weight": 0.5 }
+      ],
+      "night": [
+        { "creatureId": "wild_sandworm", "weight": 0.6 },
+        { "creatureId": "wild_coolclaw", "weight": 0.4 }
+      ],
+      "deepNight": [
+        { "creatureId": "wild_starscorpion", "weight": 0.7 },
+        { "creatureId": "wild_coolclaw", "weight": 0.3 }
+      ]
+    },
+    "tilemapKey": "tilemap_searing_dunes",
+    "musicKey": "music_desert"
+  },
+  {
+    "id": "ruinsOfAethelgard",
+    "name": "Ruins of Aethelgard",
+    "description": "Ancient stone ruins where tech-infused creatures roam among forgotten machinery.",
+    "travelTime": 30,
+    "dangerLevel": 2,
+    "encounters": [
+      { "creatureId": "wild_gearmin", "weight": 0.4 },
+      { "creatureId": "wild_stonegolem", "weight": 0.3 },
+      { "creatureId": "wild_runebat", "weight": 0.3 }
+    ],
+    "timeOfDayEncounters": {
+      "dawn": [
+        { "creatureId": "wild_runebat", "weight": 0.4 },
+        { "creatureId": "wild_gearmin", "weight": 0.6 }
+      ],
+      "day": [
+        { "creatureId": "wild_gearmin", "weight": 0.5 },
+        { "creatureId": "wild_stonegolem", "weight": 0.3 },
+        { "creatureId": "wild_runebat", "weight": 0.2 }
+      ],
+      "afternoon": [
+        { "creatureId": "wild_stonegolem", "weight": 0.5 },
+        { "creatureId": "wild_gearmin", "weight": 0.5 }
+      ],
+      "dusk": [
+        { "creatureId": "wild_runebat", "weight": 0.6 },
+        { "creatureId": "wild_shadowling", "weight": 0.4 }
+      ],
+      "night": [
+        { "creatureId": "wild_shadowling", "weight": 0.5 },
+        { "creatureId": "wild_gearmin", "weight": 0.3 },
+        { "creatureId": "wild_ghostlamp", "weight": 0.2 }
+      ],
+      "deepNight": [
+        { "creatureId": "wild_ghostlamp", "weight": 0.6 },
+        { "creatureId": "wild_runebat", "weight": 0.4 }
+      ]
+    },
+    "tilemapKey": "tilemap_ruins",
+    "musicKey": "music_ruins"
+  },
+  {
+    "id": "codeSpire",
+    "name": "Code Spire",
+    "description": "A towering digital fortress where high-level tech creatures guard ancient data.",
+    "travelTime": 60,
+    "dangerLevel": 4,
+    "encounters": [
+      { "creatureId": "wild_bitbeast", "weight": 0.3 },
+      { "creatureId": "wild_cipherwolf", "weight": 0.4 },
+      { "creatureId": "wild_datawisp", "weight": 0.3 }
+    ],
+    "timeOfDayEncounters": {
+      "dawn": [
+        { "creatureId": "wild_datawisp", "weight": 0.5 },
+        { "creatureId": "wild_bitbeast", "weight": 0.5 }
+      ],
+      "day": [
+        { "creatureId": "wild_cipherwolf", "weight": 0.4 },
+        { "creatureId": "wild_bitbeast", "weight": 0.4 },
+        { "creatureId": "wild_datawisp", "weight": 0.2 }
+      ],
+      "afternoon": [
+        { "creatureId": "wild_bitbeast", "weight": 0.5 },
+        { "creatureId": "wild_cipherwolf", "weight": 0.5 }
+      ],
+      "dusk": [
+        { "creatureId": "wild_glitchling", "weight": 0.6 },
+        { "creatureId": "wild_datawisp", "weight": 0.4 }
+      ],
+      "night": [
+        { "creatureId": "wild_glitchling", "weight": 0.5 },
+        { "creatureId": "wild_cipherwolf", "weight": 0.3 },
+        { "creatureId": "wild_viruspawn", "weight": 0.2 }
+      ],
+      "deepNight": [
+        { "creatureId": "wild_viruspawn", "weight": 0.7 },
+        { "creatureId": "wild_glitchling", "weight": 0.3 }
+      ]
+    },
+    "tilemapKey": "tilemap_code_spire",
+    "musicKey": "music_tech"
+  },
+  {
+    "id": "shimmeringDeeps",
+    "name": "Shimmering Deeps",
+    "description": "An abyssal underwater realm where legendary creatures dwell in eternal darkness.",
+    "travelTime": 120,
+    "dangerLevel": 5,
+    "encounters": [
+      { "creatureId": "wild_abyssal", "weight": 0.3 },
+      { "creatureId": "wild_voidray", "weight": 0.4 },
+      { "creatureId": "wild_crystaljelly", "weight": 0.3 }
+    ],
+    "timeOfDayEncounters": {
+      "dawn": [
+        { "creatureId": "wild_crystaljelly", "weight": 0.5 },
+        { "creatureId": "wild_abyssal", "weight": 0.5 }
+      ],
+      "day": [
+        { "creatureId": "wild_voidray", "weight": 0.4 },
+        { "creatureId": "wild_crystaljelly", "weight": 0.4 },
+        { "creatureId": "wild_abyssal", "weight": 0.2 }
+      ],
+      "afternoon": [
+        { "creatureId": "wild_abyssal", "weight": 0.5 },
+        { "creatureId": "wild_voidray", "weight": 0.5 }
+      ],
+      "dusk": [
+        { "creatureId": "wild_phantomfish", "weight": 0.6 },
+        { "creatureId": "wild_crystaljelly", "weight": 0.4 }
+      ],
+      "night": [
+        { "creatureId": "wild_phantomfish", "weight": 0.5 },
+        { "creatureId": "wild_voidray", "weight": 0.3 },
+        { "creatureId": "wild_darkfin", "weight": 0.2 }
+      ],
+      "deepNight": [
+        { "creatureId": "wild_darkfin", "weight": 0.6 },
+        { "creatureId": "wild_leviathan_spawn", "weight": 0.4 }
+      ]
+    },
+    "tilemapKey": "tilemap_shimmering_deeps",
+    "musicKey": "music_abyss"
+  }
+]
