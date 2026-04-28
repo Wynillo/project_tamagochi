@@ -39,7 +39,7 @@ export function App() {
   }, [awayHours, events.length, currentScene]);
 
   return (
-    <div style={{ position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden' }}>
+    <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden' }}>
       <div id="phaser-game-container" style={{ position: 'absolute', inset: 0, zIndex: 1 }} />
       {showHud && <HUD />}
       {showAwaySummary && (
